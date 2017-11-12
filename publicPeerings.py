@@ -172,10 +172,10 @@ def filePrintMode(data):
 
 						
 			# Validates user-input Path
-			elif not os.path.exists(os.path.abspath("{0}/{1}.txt".format(printLoc,printType))):
+			elif not os.path.exists(os.path.abspath("{0}".format(printLoc))):
 			
 				print "WARNING: Directory not found"
-				
+					
 			else:
 			
 				printPath = os.path.abspath("{0}/{1}.txt".format(printLoc,printType))
@@ -200,7 +200,9 @@ def filePrintMode(data):
 
 						print e 
 
-						break
+						continue
+
+				
 				
 		elif not len(printChoice) > 0:
 
