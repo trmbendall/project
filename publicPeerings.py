@@ -394,5 +394,19 @@ def execSum(*args,**kwargs):
 # Command line initialiser
 if __name__ == "__main__":
 
-	startPage()
+	try:
+
+		startPage()
+
+	except KeyboardInterrupt:
+
+		print "\n"
+
+		print tabulate([["Exiting..."]],tablefmt="grid")
+
+		sleep(2)
+
+		sys.exit()
+
+		
 	
