@@ -3,7 +3,7 @@
 """ publicPeerings.py: A Python script to return information on Public Peerings """
 
 __author__      = "Tristan Bendall/tristan@bendall.eu"
-__version__     = "v1.3"
+__version__     = "v1.4"
 
 # Import various libraries
 import json
